@@ -20,8 +20,8 @@ def get_letter_count():
             dict[i.lower()] += 1
     print(dict)
 
-    def sorted_dict(dict):
+    def sorted_dict(char_dict):
         list_of_dicts = []
-        for item in dict:
-            
-
+        for item in char_dict:
+            list_of_dicts.append({"char": item, "num": item[f"{item}"]})
+        return list_of_dicts
